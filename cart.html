@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Bag - Cara</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0;
+    }
+
+    nav ul li a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #ff6f61;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff6f61;
+      margin-bottom: 30px;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .item-details {
+      flex: 2;
+      padding-left: 20px;
+    }
+
+    .item-details h4 {
+      margin: 0 0 5px;
+    }
+
+    .item-controls {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .item-controls input {
+      width: 50px;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .remove-btn {
+      background: #ff6f61;
+      color: white;
+      border: none;
+      padding: 6px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .remove-btn:hover {
+      background: #e0554f;
+    }
+
+    .total {
+      text-align: right;
+      margin-top: 30px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .checkout-btn {
+      display: block;
+      margin: 30px auto;
+      background: #ff6f61;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .checkout-btn:hover {
+      background: #e0554f;
+    }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: #bbb;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cara</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cart.html">Bag</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Your Shopping Bag</h2>
+
+    <div class="cart-item">
+      <img src="https://via.placeholder.com/80" alt="Product">
+      <div class="item-details">
+        <h4>Beige Oversized Hoodie</h4>
+        <p>Size: M | Price: ₹1,199</p>
+      </div>
+      <div class="item-controls">
+        <input type="number" value="1" min="1">
+        <button class="remove-btn">Remove</button>
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <img src="https://via.placeholder.com/80" alt="Product">
+      <div class="item-details">
+        <h4>Denim Jacket</h4>
+        <p>Size: L | Price: ₹1,599</p>
+      </div>
+      <div class="item-controls">
+        <input type="number" value="2" min="1">
+        <button class="remove-btn">Remove</button>
+      </div>
+    </div>
+
+    <div class="total">
+      Total: ₹4,397
+    </div>
+
+    <button class="checkout-btn">Proceed to Checkout</button>
+  </div>
+
+  <footer>
+    &copy; 2025 Cara. All rights reserved. Fashion with a purpose.
+  </footer>
+</body>
+</html>

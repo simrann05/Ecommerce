@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cara - Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      color: #088178;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #088178;
+    }
+
+    .blog {
+      padding: 60px 80px;
+      background-color: #fdfdfd;
+    }
+
+    .blog h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    .blog-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 20px;
+    }
+
+    .blog-content h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .blog-content p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .blog-content a {
+      display: inline-block;
+      margin-top: 12px;
+      text-decoration: none;
+      color: #088178;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .blog {
+        padding: 40px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cara</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html"><i class="fas fa-bag-shopping"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog">
+    <h2>Our Latest Blog Posts</h2>
+    <div class="blog-container">
+      
+      <div class="blog-card">
+        <img src="b1.jpg" alt="Blog 1" />
+        <div class="blog-content">
+          <h3>Top 5 Summer Trends 2025</h3>
+          <p>Explore the latest styles taking over the fashion world this summer. Lightweight, bold, and comfy!</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="b2.jpg" alt="Blog 2" />
+        <div class="blog-content">
+          <h3>How to Style Casual Outfits</h3>
+          <p>Learn how to pair casual pieces for maximum style points — without compromising on comfort.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <img src="b3.jpg" alt="Blog 3" />
+        <div class="blog-content">
+          <h3>Eco-Friendly Fashion Tips</h3>
+          <p>Discover simple swaps to make your wardrobe more sustainable and environmentally friendly.</p>
+          <a href="#">Read More →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+</html>
